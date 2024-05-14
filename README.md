@@ -35,4 +35,129 @@ Este ejercicio se realiza de forma individual, pero puedes consultar dudas con l
 ## Criterios de Evaluación
 Se evaluará el dominio de las queries básicas, el uso de joins y subconsultas, entre otros criterios. Es importante seguir las normas y tener un README en el repositorio explicando brevemente cómo arrancar el proyecto.
 
+# Sakila Database Schema
+
+## Tabla `actor`
+- `actor_id`
+- `first_name`
+- `last_name`
+- `last_update`
+
+## Tabla `address`
+- `address_id`
+- `address`
+- `address2`
+- `district`
+- `city_id`
+- `postal_code`
+- `phone`
+- `location`
+- `last_update`
+
+## Tabla `category`
+- `category_id`
+- `name`
+- `last_update`
+
+## Tabla `city`
+- `city_id`
+- `city`
+- `country_id`
+- `last_update`
+
+## Tabla `country`
+- `country_id`
+- `country`
+- `last_update`
+
+## Tabla `customer`
+- `customer_id`
+- `store_id`
+- `first_name`
+- `last_name`
+- `email`
+- `address_id`
+- `active`
+- `create_date`
+- `last_update`
+
+## Tabla `film`
+- `film_id`
+- `title`
+- `description`
+- `release_year`
+- `language_id`
+- `original_language_id`
+- `rental_duration`
+- `rental_rate`
+- `length`
+- `replacement_cost`
+- `rating`
+- `special_features`
+- `last_update`
+
+## Tabla `film_actor`
+- `actor_id`
+- `film_id`
+- `last_update`
+
+## Tabla `film_category`
+- `film_id`
+- `category_id`
+- `last_update`
+
+## Tabla `film_text`
+- `film_id`
+- `title`
+- `description`
+
+## Tabla `inventory`
+- `inventory_id`
+- `film_id`
+- `store_id`
+- `last_update`
+
+## Tabla `language`
+- `language_id`
+- `name`
+- `last_update`
+
+## Tabla `payment`
+- `payment_id`
+- `customer_id`
+- `staff_id`
+- `rental_id`
+- `amount`
+- `payment_date`
+- `last_update`
+
+## Tabla `rental`
+- `rental_id`
+- `rental_date`
+- `inventory_id`
+- `customer_id`
+- `return_date`
+- `staff_id`
+- `last_update`
+
+## Tabla `staff`
+- `staff_id`
+- `first_name`
+- `last_name`
+- `address_id`
+- `picture`
+- `email`
+- `store_id`
+- `active`
+- `username`
+- `password`
+- `last_update`
+
+## Tabla `store`
+- `store_id`
+- `manager_staff_id`
+- `address_id`
+- `last_update`
+
+
 
