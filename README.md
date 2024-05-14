@@ -1,6 +1,6 @@
 # Ejercicio Final Módulo 2 - SQL
 
-Este ejercicio tiene como objetivo evaluar tu comprensión y habilidades en SQL utilizando la base de datos Sakila, que simula una tienda de alquiler de películas.
+Este ejercicio tiene como objetivo evaluar mi comprensión y habilidades en SQL utilizando la base de datos Sakila, que simula una tienda de alquiler de películas.
 
 ## Instrucciones
 - Antes de comenzar, crea un nuevo repositorio en GitHub.
