@@ -1,163 +1,109 @@
-# 🎬 Ejercicio Final Módulo 2 - SQL
+# Consultas SQL en la Base de Datos Sakila / SQL Queries in the Sakila Database
 
-Este ejercicio tiene como objetivo evaluar mi comprensión y habilidades en SQL utilizando la base de datos Sakila, que simula una tienda de alquiler de películas.
+Este repositorio contiene una serie de consultas SQL ejecutadas en la base de datos Sakila. Las consultas cubren una variedad de tareas, desde la selección de datos hasta el uso de subconsultas y funciones de agregación.
 
-## 📝 Instrucciones
-- Antes de comenzar, crea un nuevo repositorio en GitHub.
-- Esta evaluación consta de una serie de preguntas que evalúan tu comprensión y habilidades en SQL.
-- Puedes utilizar recursos externos como internet, materiales de referencia o tus propias notas.
-- Completa los ejercicios en un archivo SQL.
+## Contenido
 
-## 📚 Ejercicios
-**Base de Datos Sakila:**
-Utilizaremos la base de datos Sakila que contiene tablas como `film`, `actor`, `customer`, `rental`, `category`, entre otras.
+### Consultas Incluidas
 
-1. Selecciona todos los nombres de películas sin duplicados.
-2. Muestra los nombres de todas las películas con una clasificación de "PG-13".
-3. Encuentra el título y la descripción de todas las películas que contengan la palabra "increíble" en su descripción.
-4. Encuentra el título de todas las películas con una duración mayor a 120 minutos.
-5. Recupera los nombres de todos los actores.
-6. Encuentra el nombre y apellido de los actores con "Gibson" en su apellido.
-7. Encuentra los nombres de los actores con un actor_id entre 10 y 20.
-8. Encuentra el título de las películas en la tabla `film` que no sean ni "R" ni "PG-13" en cuanto a su clasificación.
-9. Encuentra la cantidad total de películas en cada clasificación de la tabla `film` y muestra la clasificación junto con el recuento.
-10. Encuentra la cantidad total de películas alquiladas por cada cliente y muestra el ID del cliente, su nombre y apellido junto con la cantidad de películas alquiladas.
+1. **Seleccionar títulos únicos de películas.**
+2. **Mostrar películas con clasificación "PG-13".**
+3. **Buscar películas con la palabra "amazing" en su descripción.**
+4. **Encontrar películas con duración mayor a 120 minutos.**
+5. **Recuperar nombres de todos los actores.**
+6. **Encontrar actores con apellido "Gibson".**
+7. **Buscar actores con `actor_id` entre 10 y 20.**
+8. **Encontrar películas que no sean clasificadas como "R" o "PG-13".**
+9. **Contar películas en cada clasificación.**
+10. **Contar alquileres de películas por cliente.**
+11. **Contar alquileres de películas por categoría.**
+12. **Calcular promedio de duración de películas por clasificación.**
+13. **Buscar actores en la película "Indian Love".**
+14. **Buscar películas con "dog" o "cat" en su descripción.**
+15. **Encontrar actores que no aparezcan en ninguna película.**
+16. **Buscar películas lanzadas entre 2005 y 2010.**
+17. **Encontrar películas de la categoría "Family".**
+18. **Buscar actores que aparecen en más de 10 películas.**
+19. **Buscar películas clasificadas "R" con duración mayor a 120 minutos.**
+20. **Encontrar categorías de películas con duración promedio superior a 120 minutos.**
+21. **Buscar actores que han actuado en al menos 5 películas.**
+22. **Buscar películas alquiladas por más de 5 días.**
+23. **Encontrar actores que no han actuado en películas de la categoría "Horror".**
+24. **BONUS: Buscar comedias con duración mayor a 180 minutos.**
+25. **BONUS: Encontrar actores que han actuado juntos en al menos una película.**
 
-...
+## Instalación y Uso
 
-## ⭐ Bonus
-24. **BONUS:** Encuentra el título de las películas que son comedias y tienen una duración mayor a 180 minutos en la tabla `film`.
-25. **BONUS:** Encuentra todos los actores que han actuado juntos en al menos una película. La consulta debe mostrar el nombre y apellido de los actores y el número de películas en las que han actuado juntos.
+1. **Clona el repositorio**:
+   ```bash
+   git clone https://github.com/tu_usuario/tu_repositorio.git
+   ```
+2. **Navega al directorio del proyecto**:
+   ```bash
+   cd tu_repositorio
+   ```
+3. **Abre el archivo SQL en tu herramienta de base de datos favorita y ejecuta las consultas**.
 
-## 📜 Normas
-Este ejercicio se realiza de forma individual, pero puedes consultar dudas con la profesora y compañeras si lo necesitas. Durante la prueba, evita copiar código de otras personas. Después de la entrega, habrá una revisión del ejercicio con la profesora para recibir feedback.
+## Contacto
 
-## 📈 Criterios de Evaluación
-Se evaluará el dominio de las queries básicas, el uso de joins y subconsultas, entre otros criterios. Es importante seguir las normas y tener un README en el repositorio explicando brevemente cómo arrancar el proyecto.
+Si tienes alguna pregunta o necesitas más información, no dudes en contactarme.
 
-# 🗂️ Sakila Database Schema
+- **LinkedIn**: [Mabel Martinez Rodriguez](https://www.linkedin.com/in/mabelmr)
 
-## Tabla `actor`
-- `actor_id`
-- `first_name`
-- `last_name`
-- `last_update`
+---
 
-## Tabla `address`
-- `address_id`
-- `address`
-- `address2`
-- `district`
-- `city_id`
-- `postal_code`
-- `phone`
-- `location`
-- `last_update`
+# SQL Queries in the Sakila Database
 
-## Tabla `category`
-- `category_id`
-- `name`
-- `last_update`
+This repository contains a series of SQL queries executed in the Sakila database. The queries cover a variety of tasks, from selecting data to using subqueries and aggregation functions.
 
-## Tabla `city`
-- `city_id`
-- `city`
-- `country_id`
-- `last_update`
+## Contents
 
-## Tabla `country`
-- `country_id`
-- `country`
-- `last_update`
+### Included Queries
 
-## Tabla `customer`
-- `customer_id`
-- `store_id`
-- `first_name`
-- `last_name`
-- `email`
-- `address_id`
-- `active`
-- `create_date`
-- `last_update`
+1. **Select unique movie titles.**
+2. **Show movies with a "PG-13" rating.**
+3. **Find movies with the word "amazing" in their description.**
+4. **Find movies with a runtime greater than 120 minutes.**
+5. **Retrieve names of all actors.**
+6. **Find actors with the last name "Gibson".**
+7. **Search for actors with `actor_id` between 10 and 20.**
+8. **Find movies that are not rated "R" or "PG-13".**
+9. **Count movies in each rating category.**
+10. **Count movie rentals by customer.**
+11. **Count movie rentals by category.**
+12. **Calculate average movie duration by rating.**
+13. **Find actors in the movie "Indian Love".**
+14. **Find movies with "dog" or "cat" in their description.**
+15. **Find actors not appearing in any movies.**
+16. **Search for movies released between 2005 and 2010.**
+17. **Find movies in the "Family" category.**
+18. **Find actors appearing in more than 10 movies.**
+19. **Find "R" rated movies with a runtime over 120 minutes.**
+20. **Find movie categories with an average duration over 120 minutes.**
+21. **Find actors who have acted in at least 5 movies.**
+22. **Find movies rented for more than 5 days.**
+23. **Find actors not in any "Horror" movies.**
+24. **BONUS: Find comedies with a runtime over 180 minutes.**
+25. **BONUS: Find actors who have acted together in at least one movie.**
 
-## Tabla `film`
-- `film_id`
-- `title`
-- `description`
-- `release_year`
-- `language_id`
-- `original_language_id`
-- `rental_duration`
-- `rental_rate`
-- `length`
-- `replacement_cost`
-- `rating`
-- `special_features`
-- `last_update`
+## Installation and Usage
 
-## Tabla `film_actor`
-- `actor_id`
-- `film_id`
-- `last_update`
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your_username/your_repository.git
+   ```
+2. **Navigate to the project directory**:
+   ```bash
+   cd your_repository
+   ```
+3. **Open the SQL file in your favorite database tool and run the queries**.
 
-## Tabla `film_category`
-- `film_id`
-- `category_id`
-- `last_update`
+## Contact
 
-## Tabla `film_text`
-- `film_id`
-- `title`
-- `description`
+If you have any questions or need more information, feel free to contact me.
 
-## Tabla `inventory`
-- `inventory_id`
-- `film_id`
-- `store_id`
-- `last_update`
+- **LinkedIn**: [Mabel Martinez Rodriguez](https://www.linkedin.com/in/mabelmr)
 
-## Tabla `language`
-- `language_id`
-- `name`
-- `last_update`
-
-## Tabla `payment`
-- `payment_id`
-- `customer_id`
-- `staff_id`
-- `rental_id`
-- `amount`
-- `payment_date`
-- `last_update`
-
-## Tabla `rental`
-- `rental_id`
-- `rental_date`
-- `inventory_id`
-- `customer_id`
-- `return_date`
-- `staff_id`
-- `last_update`
-
-## Tabla `staff`
-- `staff_id`
-- `first_name`
-- `last_name`
-- `address_id`
-- `picture`
-- `email`
-- `store_id`
-- `active`
-- `username`
-- `password`
-- `last_update`
-
-## Tabla `store`
-- `store_id`
-- `manager_staff_id`
-- `address_id`
-- `last_update`
 
 
 
